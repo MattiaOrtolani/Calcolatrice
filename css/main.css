@@ -19,7 +19,7 @@ body {
 }
 
 .phone {
-  background-color: rgb(147, 147, 147);
+  background-color: rgb(31, 31, 31);
   height: 74.4rem;
   width: 39rem;
   border-radius: 50px;
@@ -36,6 +36,14 @@ body {
   text-overflow: ellipsis;
   align-items: end;
   position: relative;
+}
+.phone__display > svg {
+  position: absolute;
+  top: 7rem;
+  left: 1.2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: rgb(232, 151, 0);
 }
 .phone__display--notch {
   position: absolute;
@@ -54,6 +62,31 @@ body {
   margin: 1rem;
   margin-right: 1.5rem;
 }
+.phone__display .control {
+  position: absolute;
+  top: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 4rem;
+  display: flex;
+  color: whitesmoke;
+  font-size: 1.6rem;
+  align-items: center;
+}
+.phone__display .control > p {
+  font-size: 1.8rem;
+  margin-left: 2rem;
+}
+.phone__display .control--icon {
+  display: flex;
+  margin-left: auto;
+}
+.phone__display .control--icon > svg {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.8rem;
+}
 .phone__keyboard {
   display: grid;
   grid-template-columns: repeat(4, 8.5rem);
@@ -68,12 +101,28 @@ body {
   font-size: 3.7rem;
   color: whitesmoke;
   background-color: rgb(51, 51, 51);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button > svg {
+  width: 50%;
+  height: 50%;
+}
+.button:active {
+  background-color: #262626;
 }
 
 .light-grey {
   background-color: rgb(100, 100, 100);
 }
+.light-grey:active {
+  background-color: #575757;
+}
 
 .orange {
-  background-color: orange;
+  background-color: rgb(232, 151, 0);
+}
+.orange:active {
+  background-color: #cf8600;
 }/*# sourceMappingURL=main.css.map */

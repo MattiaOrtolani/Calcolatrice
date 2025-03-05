@@ -1,6 +1,6 @@
 .phone
 {
-    background-color: rgb(147, 147, 147);
+    background-color: rgb(31, 31, 31);
     height: 74.4rem;
     width: 39rem;
     border-radius: 50px;
@@ -18,6 +18,16 @@
         text-overflow: ellipsis;
         align-items: end;
         position: relative;
+
+        & > svg
+        {
+            position: absolute;
+            top: 7rem;
+            left: 1.2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            color: rgb(232, 151, 0);
+        }
 
         &--notch
         {
@@ -39,6 +49,41 @@
             margin: 1rem;
             margin-right: 1.5rem;
         }
+
+        .control
+        {
+            position: absolute;
+            top: 1.4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            height: 4rem;
+            display: flex;
+            color: whitesmoke;
+            font-size: 1.6rem;
+            align-items: center;
+
+            & > p
+            {
+                font-size: 1.8rem;
+                margin-left: 2rem;
+            }
+
+            &--icon
+            {
+                display: flex;
+                margin-left: auto;
+
+                
+
+                & > svg
+                {
+                    height: 2rem;
+                    width: 2rem;
+                    margin-right: .8rem;
+                }
+            }
+        }
     }
 
     &__keyboard
@@ -58,14 +103,27 @@
     font-size: 3.7rem;
     color: whitesmoke;
     background-color: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > svg
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    @include active-button(rgb(51,51,51));
 }
 
 .light-grey
 {
     background-color: rgb(100, 100, 100);
+    @include active-button(rgb(100,100,100));
 }
 
 .orange
 {
-    background-color: orange;
+    background-color: rgb(232, 151, 0);
+    @include active-button(rgb(232,151,0));
 }

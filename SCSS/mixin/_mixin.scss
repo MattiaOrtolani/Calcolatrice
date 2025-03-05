@@ -1,0 +1,7 @@
+@mixin active-button($background-color)
+{
+    &:active
+    {
+        background-color: darken($background-color, 5%);
+    }
+}
