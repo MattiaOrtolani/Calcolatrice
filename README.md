@@ -6,4 +6,4 @@
 
 <br>
 
-<p>semplice calcolatrice che svolge calcoli basilari</p>
+<p>semplice calcolatrice che svolge calcoli basilari (js non ancora implementato)</p>
