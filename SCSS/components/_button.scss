@@ -1,0 +1,31 @@
+.button
+{
+    border-radius: 100px;
+    border: none;
+    font-size: 3.7rem;
+    color: whitesmoke;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > svg
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    @include active-button(rgb(51,51,51));
+}
+
+.light-grey
+{
+    background-color: rgb(100, 100, 100);
+    @include active-button(rgb(100,100,100));
+}
+
+.orange
+{
+    background-color: rgb(232, 151, 0);
+    @include active-button(rgb(232,151,0));
+}
