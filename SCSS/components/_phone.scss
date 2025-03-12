@@ -4,7 +4,7 @@
     height: 74.4rem;
     width: 39rem;
     border-radius: 50px;
-    outline: solid 12px black;
+    outline: solid 5px black;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
             left: 50%;
             transform: translateX(-50%);
             top: 1.4rem;
-            width: 12rem;
+            width: 30%;
             height: 4rem;
             background-color: black;
             border-radius: 100px;
@@ -69,6 +69,7 @@
             {
                 font-size: 1.8rem;
                 margin-left: 2rem;
+                font-weight: 800;
             }
 
             &--icon
