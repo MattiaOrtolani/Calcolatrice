@@ -1,7 +1,7 @@
 # CALCOLATRICE
 
 <div align="center">
-    <img src="assets/images/calcolatrice.png" width="80%">
+    <img src="assets/images/calcolatrice.png" width="40%">
 </div>
 
 <br>
